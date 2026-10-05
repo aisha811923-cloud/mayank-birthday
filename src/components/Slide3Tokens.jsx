@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Wrench, Laugh, Sofa, Handshake, CheckCircle2, Ticket } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
-const SIBLING_PASSES = [
+const BESTI_PASSES = [
   {
     id: 'pass-1',
     title: 'Unlimited Tech Support Pass 🛠️',
@@ -67,7 +67,7 @@ export default function Slide3Tokens() {
 
       {/* Large Headline */}
       <h2 className="font-outfit text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-1">
-        Exclusive Sibling Passes 🎟️
+        Exclusive Besti Passes 🎟️
       </h2>
       <p className="text-xs sm:text-sm text-slate-300 max-w-xs mx-auto mb-4">
         Tap each token to claim it for Chapter 16:
@@ -75,7 +75,7 @@ export default function Slide3Tokens() {
 
       {/* 2x2 Grid of 3D Flip Cards */}
       <div className="grid grid-cols-2 gap-2.5 sm:gap-3 w-full max-w-md perspective-1000 my-1">
-        {SIBLING_PASSES.map((pass) => {
+        {BESTI_PASSES.map((pass) => {
           const isClaimed = !!claimed[pass.id];
           const Icon = pass.icon;
 
